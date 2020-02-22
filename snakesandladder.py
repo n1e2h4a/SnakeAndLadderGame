@@ -73,3 +73,11 @@ def snake_ladder(player_name, current_value, dice_value):
 
     return final_value
 
+def check_win(player_name, position):
+    time.sleep(SLEEP_BETWEEN_ACTIONS)
+    if MAX_VAL == position:
+        print("\n\n\nThats it.\n\n" + player_name + " won the game.")
+        print("Congratulations " + player_name)
+        print("\nThank you for playing the game.")
+        sys.exit(1)
+
