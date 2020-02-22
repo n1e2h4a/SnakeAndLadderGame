@@ -81,3 +81,13 @@ def check_win(player_name, position):
         print("\nThank you for playing the game.")
         sys.exit(1)
 
+def start():
+    welcome_msg()
+    time.sleep(SLEEP_BETWEEN_ACTIONS)
+
+
+    player1_name, player2_name = get_player_names()
+    time.sleep(SLEEP_BETWEEN_ACTIONS)
+
+    player1_current_position = 0
+    player2_current_position = 0
