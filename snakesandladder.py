@@ -15,6 +15,7 @@ def welcome_msg():
       2. If you lands at the bottom of a ladder, you can move up to the top of the ladder.
       3. If you lands on the head of a snake, you must slide down to the bottom of the snake.
       4. The first player to get to the FINAL position is the winner.
+
       5. Hit enter to roll the dice.
     """
     print(msg)
@@ -33,4 +34,10 @@ def get_player_names():
     return player1_name, player2_name
 
 print("single player at start position---------0")    
+
+def get_dice_value():
+    time.sleep(SLEEP_BETWEEN_ACTIONS)
+    dice_value = random.randint(1, DICE_FACE)
+    print("Its a " + str(dice_value))
+    return dice_value
 
